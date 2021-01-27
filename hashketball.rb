@@ -128,7 +128,7 @@ def game_hash
 end
 
 # Write code here
-def all_players(home_team, away_team)
+def all_players
   new_array = []
   game_hash[:away][:players] << new_array
   game_hash[:home][:players] << new_array
