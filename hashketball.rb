@@ -146,7 +146,7 @@ def shoe_size (name)
   shoe_size = 0
   all_players.each do |player|
     if player[:player_name] == name
-    points_scored = player[:shoe]
+    shoe_size = player[:shoe]
   end 
 end
   shoe_size
