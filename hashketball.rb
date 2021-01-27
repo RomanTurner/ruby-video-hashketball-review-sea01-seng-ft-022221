@@ -138,6 +138,7 @@ def stat_check(name, stat)
     if player[:player_name] == name
     statistic = player[:stat]
   end 
+  end 
   statistic
 end 
 
