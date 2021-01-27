@@ -153,7 +153,7 @@ end
 end
 
 def shoe_size (name)
-  shoe_size = stat_check(name, :shoe_size)
+  shoe_size = stat_check(name, :shoe)
 end
   
   
