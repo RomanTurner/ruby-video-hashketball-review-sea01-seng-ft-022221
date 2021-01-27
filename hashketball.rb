@@ -128,6 +128,12 @@ def game_hash
 end
 
 # Write code here
+def all_players(home_team, away_team)
+  new_array = []
+  game_hash[:away][:players] << new_array
+  game_hash[:home][:players] << new_array
+  puts new_array
+end
 def num_points_scored (name)
   
 end
