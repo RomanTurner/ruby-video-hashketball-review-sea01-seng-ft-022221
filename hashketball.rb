@@ -133,7 +133,8 @@ def all_players
 end
 
 def num_points_scored (name)
-  
+  all_players.each do |player, statistic|
+    if player[:player_name]
 end
   
   
