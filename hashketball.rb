@@ -131,10 +131,10 @@ end
 def all_players
   new_array = []
   game_hash[:away][:players].each do |player|
-  player<< new_array
+  new_array << player
   end 
   game_hash[:home][:players].each do |player|
-    player << new_array
+  new_array << player
   end 
   puts new_array
 end
