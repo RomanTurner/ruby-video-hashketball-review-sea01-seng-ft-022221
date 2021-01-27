@@ -129,14 +129,7 @@ end
 
 # Write code here
 def all_players
-  new_array = []
-  game_hash[:away][:players].each do |player|
-  new_array << player
-  end 
-  game_hash[:home][:players].each do |player|
-  new_array << player
-  end 
-  puts new_array
+  all_players = game_hash[:away][:players].concat(game_hash[:home][:players])
 end
 
 def num_points_scored (name)
