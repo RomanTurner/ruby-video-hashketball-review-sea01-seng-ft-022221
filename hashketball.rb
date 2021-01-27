@@ -132,12 +132,11 @@ def all_players
   all_players = game_hash[:away][:players].concat(game_hash[:home][:players])
 end
 
-def stat_check(name, stat)
+def stat_check(name, :stat)
   statistic = 0
   all_players.each do |player|
-    player.each do |key, value|
-    if key[:player_name] == name
-    statistic = key[value]
+    if player[:player_name] == name
+    statistic = player[:stat]
   end 
   statistic
 end 
@@ -153,7 +152,7 @@ end
 end
 
 def shoe_size (name)
-  shoe_size = stat_check(name)
+  shoe_size = stat_check(name, :shoe_size)
 end
   
   
