@@ -130,10 +130,15 @@ end
 # Write code here
 def all_players
   new_array = []
-  game_hash[:away][:players] << new_array
-  game_hash[:home][:players] << new_array
+  game_hash[:away][:players].each do |player|
+  player<< new_array
+  end 
+  game_hash[:home][:players].each do |player|
+    player << new_array
+  end 
   puts new_array
 end
+
 def num_points_scored (name)
   
 end
