@@ -163,6 +163,11 @@ else
   return nil 
 end
 end 
+
+def team_names 
+  both_team_names = game_hash[:away][:team_name].concat(game_hash[:home][:team_name)
+  
+end 
   
   
   
