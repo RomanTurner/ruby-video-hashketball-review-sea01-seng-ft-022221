@@ -166,9 +166,9 @@ end
 
 def team_names 
   both_team_names = []
-  game_hash[:away][:team_name]
-  
-  binding.pry
+  both_team_names << game_hash[:away][:team_name]
+  both_team_names << game_hash[:home][:team_name]
+  both_team_names
 end 
   
   
