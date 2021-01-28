@@ -160,6 +160,7 @@ when team == game_hash[:away][:team_name]
   game_hash[:away][:team_colors]
 else 
   return nil 
+end
 end 
   
   
