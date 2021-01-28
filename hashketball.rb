@@ -152,7 +152,15 @@ end
   shoe_size
 end
 
-def 
+def team_colors (team)
+case
+when team == game_hash[:home][:team_name]
+  game_hash[:home][:team_colors]
+when team == game_hash[:away][:team_name]
+  game_hash[:away][:team_colors]
+else 
+  return nil 
+end 
   
   
   
