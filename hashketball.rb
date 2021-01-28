@@ -180,7 +180,7 @@ end
      team_info.each do |roster, player|
       if roster == :players
         player.each do |stats|
-          numbers.push(stats[:number])
+          roster_by_number.push(stats[:number])
         end 
        end
       end
