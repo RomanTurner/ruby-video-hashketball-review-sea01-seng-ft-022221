@@ -202,12 +202,12 @@ def big_shoe_rebounds
   shoe_size = 0
   rebounds = 0
   all_players.each do |player|
-  if player[:shoe] > big_shoes
-        big_shoes = player[:shoe]
-        big_feet = player[:rebounds]
+  if player[:shoe] > shoe_size
+        shoe_size = player[:shoe]
+        rebounds = player[:rebounds]
       end
     end
-    big_feet
+    shoe_size
 end 
 
   
