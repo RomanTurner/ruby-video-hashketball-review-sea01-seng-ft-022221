@@ -156,9 +156,9 @@ def team_colors (team)
   
 case
 when team == game_hash[:home][:team_name]
-  game_hash[:home][:team_colors]
+  game_hash[:home][:colors]
 when team == game_hash[:away][:team_name]
-  game_hash[:away][:team_colors]
+  game_hash[:away][:colors]
 else 
   return nil 
 end
