@@ -188,7 +188,15 @@ end
   end
   roster_by_number  
 end
+
   
+def player_stats players_stats
+all_players.each do |players|
+  if players[:player_name] == players_stats
+    return players
+  end
+end
+end
   
   
   
