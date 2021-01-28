@@ -173,14 +173,14 @@ end
   
   
   
-  def player_numbers name_of_team
+  def player_numbers roster
   roster_by_number = []
   game_hash.each do |team, team_info|
-    if team_info[:team_name] == name_of_team
-     team_info.each do |name_of_team, player|
+    if team_info[:team_name] == roster
+     team_info.each do |roster, player|
       if roster == :players
         player.each do |stats|
-          roster_by_number.push(stats[:number])
+          numbers.push(stats[:number])
         end 
        end
       end
