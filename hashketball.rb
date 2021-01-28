@@ -199,9 +199,8 @@ end
 end
   
 def big_shoe_rebounds
-  wink_wink = 0
-  big_shoes = 0
-  big_feet = wink_wink
+  shoe_size = 0
+  rebounds = 0
   all_players.each do |player|
   if player[:shoe] > big_shoes
         big_shoes = player[:shoe]
