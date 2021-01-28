@@ -1,5 +1,5 @@
 # Write your code below game_hash
-
+require 'pry'
 def game_hash
   {
     home: {
@@ -166,6 +166,7 @@ end
 
 def team_names 
   both_team_names = game_hash[:away][:team_name].concat(game_hash[:home][:team_name])
+  binding.pry
 end 
   
   
